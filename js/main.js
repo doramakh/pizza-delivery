@@ -25,13 +25,10 @@ var doughResult = function () {
 var GetSelectedIngrediets = function () {
   elPizzaIngredientsResult.innerHTML = '';
 
-  //Reference the Table.
   var divIngredients = document.getElementById('ingredients');
   
-  //Reference all the CheckBoxes.
   var chks = divIngredients.getElementsByTagName('INPUT');
   
-  // Loop and push the checked CheckBox value in Array.
   for (var i = 0; i < chks.length; i++) {
     if (chks[i].checked) {
       ingredientsList.push(chks[i].value);
@@ -57,13 +54,10 @@ var GetSelectedIngrediets = function () {
 var GetSelectedAdditions = function () {
   elPizzaAdditionsResult.innerHTML = '';
 
-  //Reference the Table.
   var divAdditions = document.getElementById('additions');
   
-  //Reference all the CheckBoxes.
   var chksAdditions = divAdditions.getElementsByTagName('INPUT');
   
-  // Loop and push the checked CheckBox value in Array.
   for (var i = 0; i < chksAdditions.length; i++) {
     if (chksAdditions[i].checked) {
       additionsList.push(chksAdditions[i].value);
