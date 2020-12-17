@@ -37,3 +37,30 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.radio-control{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  background-image: url(../img/pizza.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.middle{
+  width: 120px;
+  height: 120px;
+}
+
+.large{
+  width: 140px;
+  height: 140px;
+}
+
+.radio-input:checked + .radio-control{
+  border: 1px solid rgb(38, 131, 207);
+}
